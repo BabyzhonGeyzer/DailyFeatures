@@ -1,0 +1,6 @@
+name: DailyFeatures
+version: '${version}'
+main: ru.elementcraft.dailyfeatures.DailyFeatures
+load: STARTUP
+authors: [MordaSobaki]
+description: Daily Quests for everyone
