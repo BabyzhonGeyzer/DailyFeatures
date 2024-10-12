@@ -1,0 +1,25 @@
+quests:
+  1:
+    name: "&2&lМясорубка"
+    menu_item: DIAMOND_SWORD
+    description:
+      - "&eУбей 5 зомби."
+    quest_type: KILL
+    required_entity: ZOMBIE
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% diamond_block 32"
+  2:
+    name: "&6&lКопатель онлайн"
+    menu_item: DIRT
+    description:
+      - "&eСломай 150 любых блоков."
+    quest_type: BREAK
+    required_item:
+    required_amount: 150
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% diamond_block 20"

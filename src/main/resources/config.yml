@@ -1,0 +1,57 @@
+# plugin prefix
+prefix: "&7[DailyFeatures&7]"
+
+# Select the mode of temporality.
+# ===================================
+# 1 : daily quests.
+# ===================================
+# 2 : weekly quests.
+# ===================================
+# 3 : monthly quests.
+# ===================================
+# You need to reset progressions
+# if you change this mode.
+temporality_mode: 1
+
+temporality_initials:
+  days: "d"
+  hours: "h"
+  minutes: "m"
+  few_seconds: "Few seconds"
+
+# Global Reward
+# Will be given when the player has completed all his daily quests.
+# The syntax is the same as for quest rewards.
+global_reward:
+  enabled: true
+  name: "&6&lГлобальное задание"
+  count_prefix: "&e"
+  menu_item: GOLD_BLOCK
+  description:
+    - "&eВыполни все квесты на сегодня и получи награду."
+  reward_type: COMMAND
+  commands:
+    - "eco give %player% 5000"
+    - "give %player% diamond_block 32"
+
+# Set a title that will be displayed when a player completes a quest.
+# Reminder: 20 ticks is equal to one second.
+# Available placeholders : %player% , %questName%
+title:
+  enabled: true
+  fadeIn: 10 # The default number of ticks for the title to fade in.
+  stay: 70 # The default number of ticks for the title to stay.
+  fadeOut: 20 # The default number of ticks for the title to fade out.
+  text: "&aХорош, %player%"
+  subtitle: "&aТы выполнил квест %questName% &a!" # Leave this field blank if you do not want a subtitle
+
+
+
+# Set a message that will be displayed in the actionbar when a player completes a quest.
+# Available placeholders : %player% , %questName%
+actionbar:
+  enabled: true
+  text: "&eТы выполнил %questName%&e!"
+
+
+
